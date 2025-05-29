@@ -1,0 +1,281 @@
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+nav {
+  background: #1b192e;
+  padding: 15px 0;
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  gap: 30px;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 8px 0;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+
+nav ul li a:hover {
+  color: #a685f6;
+}
+
+
+section {
+  min-height: 100vh;
+  padding: 100px 20px 50px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#home {
+  background: url('./imagens/home.jpg') center/cover no-repeat;
+  color: rgb(219, 212, 212);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#home h1 {
+  font-size: 40px;
+}
+
+#home p {
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: 10px;
+  max-width: 90%;
+}
+
+.Sobre {
+  background-color: #1e1f34;
+  padding: 80px 20px;
+  text-align: center;
+}
+.branco{
+  color: white;
+  font-size: 15px;
+  max-width: 800px;
+  margin: 20px auto 40px;
+  line-height: 1.8;
+}
+
+.Sobre h2 {
+  color: #ffffff;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 15px;
+}
+
+.Sobre h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #b8a4ea;
+}
+rd-text{
+  color: black;
+  font-size: 14px;
+  font-weight: 400;
+}
+.contatos {
+  background-color: #1e1f34;
+  padding: 80px 20px;
+}
+
+.form-container {
+  background-color: #b8a4ea;
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 500px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form label {
+  text-align: left;
+  font-weight: bold;
+  color: #333;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background: #1e1f34;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  align-self: center;
+  margin-top: 10px;
+}
+form button:hover{
+  background: #37395eb8;
+}
+
+
+footer {
+  background: #1e1f34;
+  color: #ccc;
+  text-align: center;
+  padding: 20px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+
+footer h4 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #b8a4ea;
+}
+
+footer hr {
+  border-color: rgba(255, 255, 255, 0.1);
+  margin-bottom: 30px;
+}
+
+.redes-sociais {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.redes-sociais li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 16px;
+  padding: 8px 12px;
+}
+
+.redes-sociais li a:hover {
+  color: #b8a4ea;
+}
+
+footer p {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #999;
+}
+
+.card {
+  background-color: #b8a4ea; 
+  border: none;
+  border-radius: 10px;
+  height: 100%;
+}
+.card-body {
+  background-color:#b9b9c14a; 
+  color: #1e1f34; 
+}
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  nav ul li {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+
+  #home h1 {
+    font-size: 28px;
+  }
+
+  #home p {
+    font-size: 16px;
+  }
+
+  .card-title {
+    font-size: 16px;
+  }
+
+  .card-text {
+    font-size: 14px;
+  }
+
+  section {
+    padding: 100px 15px 40px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+}

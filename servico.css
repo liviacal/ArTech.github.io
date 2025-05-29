@@ -1,0 +1,162 @@
+body {
+  background-color: #25233b;
+  color: #f1f1f1;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+nav {
+  background: #1b192e;
+  padding: 15px 0;
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  gap: 30px;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 8px 0;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+
+nav ul li a:hover {
+  color: #a685f6;
+}
+
+
+.secao-video {
+  padding: 90px 20px 60px;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.titulo-servicos {
+  
+  color: #ffffff;
+  margin-bottom: 40px;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+}
+.titulo-servicos::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #a685f6;
+}
+.container-video {
+  margin: 0 auto;
+  max-width: 560px;
+}
+
+.container-video iframe {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+
+
+.secao-precos {
+  text-align: center;
+  background-color: #2a2540;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  color: #ffffff;
+}
+
+.secao-precos h2 {
+  margin-bottom: 40px;
+  font-weight: 700;
+  color: #ffffff;
+  position: relative;
+  display: inline-block;
+}
+.secao-precos h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background-color: #a685f6;
+}
+.tabela-precos {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabela-precos th, .tabela-precos td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  background-color: rgb(209, 196, 230);
+  color: #1b192e;
+}
+
+.tabela-precos th {
+  background-color: #d9d2f4;
+  font-weight: bold;
+}
+
+.tabela-precos tr:nth-child(odd) td {
+  background-color: #c6badc;
+}
+
+.botao-consulta {
+  background-color: #a685f6;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 20px;
+  transition: 0.3s ease;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.botao-consulta:hover {
+  background-color: #ffffff;
+  color: #a685f6;
+}
